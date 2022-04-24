@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <div className="inputTable">  
         <input type="text" onChange={(e) => setQuery(e.target.value)} />
-        <button onClick={search != 0 ? search : console.log("idiot")} >Search</button>
+        <button onClick={search != 0 ? search : console.log("error")} >Search</button>
       </div>
       {searchq ? <div className="cards">
         {data.map((img, key) => (
